@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Paint App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="library/p5.min.js"></script>
+	<script type="text/javascript" src="library/p5.dom.js"></script>
+	<script type="text/javascript" src="library/p5.sound.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div id="sidebar">
+		<div class="row heading">
+			<h2>Paint</h2>
+		</div>
+		<div class="row">
+			<p>Brush Color</p>
+			<input type="color" id="brushColor">
+		</div>
+		<div class="row">
+			<p>Background Color</p>
+			<input type="color" id="bgColor"> 
+		</div>
+		<div class="row">
+			<p>Size</p>
+			<input type="range" id="sizeRange" min="2" max="20" value="5" steps="2">
+		</div>
+		<div class="row">
+			<p>Pen Style</p>
+			<div><span>Pencil</span><input type="checkbox" id="pencil" checked="true"></div>
+			<div><span>Brush</span><input type="checkbox" id="brush"></div>
+			<div><span>Square</span><input type="checkbox" id="square"></div>
+			<div><span>Eraser</span><input type="checkbox" id="eraser"></div>
+		</div>
+		<div class="row">
+			<p><a href="#" id="saveCanvas">Save & Clear</a></p>
+			<p><a href="#" id="clearCanvas">Clear</a></p>
+		</div>
+	</div>
+</body>
+</html>
