@@ -1,0 +1,30 @@
+body {
+  margin: 0px;
+}
+.uploader {
+    position:absolute; 
+    width:100%; 
+    height:100%;
+    background:#f3f3f3; 
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    font-family: sans-serif;
+    color:rgb(120,120,120);
+    font-weight: 600;
+}
+.uploader p {
+  margin-top: -20px;
+}
+#filePhoto{
+    position:absolute;
+    width:100%;
+    height:100%;
+    left:0;
+    z-index:2;
+    opacity:0;
+    cursor:pointer;
+}
+canvas {
+  display: none;
+}
